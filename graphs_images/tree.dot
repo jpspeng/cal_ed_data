@@ -1,0 +1,16 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="fr_percent <= 0.3545\ngini = 0.7498\nsamples = 716\nvalue = [182, 174, 175, 185]"] ;
+1 [label="susp_per_enrollment <= 0.0206\ngini = 0.2576\nsamples = 166\nvalue = [0, 1, 24, 141]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.0899\nsamples = 106\nvalue = [0, 0, 5, 101]"] ;
+1 -> 2 ;
+3 [label="gini = 0.455\nsamples = 60\nvalue = [0, 1, 19, 40]"] ;
+1 -> 3 ;
+4 [label="fr_percent <= 0.6935\ngini = 0.7098\nsamples = 550\nvalue = [182, 173, 151, 44]"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label="gini = 0.6167\nsamples = 201\nvalue = [8, 51, 108, 34]"] ;
+4 -> 5 ;
+6 [label="gini = 0.6132\nsamples = 349\nvalue = [174, 122, 43, 10]"] ;
+4 -> 6 ;
+}
